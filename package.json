@@ -1,19 +1,20 @@
 {
-  "name": "sap-node-crud-client",
+  "name": "sap-node-crud-server",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
+  "main": "src/index.js",
+  "type": "commonjs",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --port 5173"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.0",
-    "vite": "^5.0.12"
+    "nodemon": "^3.0.2"
   }
 }
